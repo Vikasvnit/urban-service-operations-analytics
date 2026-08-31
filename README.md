@@ -1,5 +1,7 @@
 # Urban Service Operations Analytics
 
+[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Streamlit-red?logo=streamlit)](https://urban-service-operations-analytics.streamlit.app)
+
 An operations analytics and capacity optimization dashboard for a home-service marketplace.
 
 ## 📊 Project Overview
