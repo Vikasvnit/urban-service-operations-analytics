@@ -1,0 +1,223 @@
+
+======================================================================
+QUERY 1
+======================================================================
+total_bookings	completed_bookings	cancelled_bookings	rescheduled_bookings	completion_rate	cancellation_rate
+25000	20761	3179	1060	83.04	12.72
+
+======================================================================
+QUERY 2
+======================================================================
+Service_Category	total_bookings	completed_bookings	cancelled_bookings	cancellation_rate	avg_response_time	avg_customer_rating
+AC Repair	4025	3253	597	14.83	10.7	4.49
+Salon	4388	3657	564	12.85	10.74	4.5
+Cleaning	5501	4595	677	12.31	10.63	4.49
+Electrician	3882	3247	473	12.18	10.75	4.49
+Plumbing	3464	2877	418	12.07	10.65	4.5
+Appliance Repair	3740	3132	450	12.03	10.76	4.49
+
+QUERY 3 ERROR:
+no such column: City
+
+======================================================================
+QUERY 4
+======================================================================
+Time_Slot	total_bookings	cancellations	cancellation_rate	avg_response_time
+8-10 AM	2549	209	8.2	8.99
+10-12 PM	3327	317	9.53	8.97
+12-2 PM	3445	322	9.35	8.98
+2-4 PM	3423	315	9.2	8.87
+4-6 PM	4323	697	16.12	12.54
+6-8 PM	5044	833	16.51	12.54
+8-10 PM	2889	486	16.82	12.47
+
+======================================================================
+QUERY 5
+======================================================================
+Cancellation_Reason	cancellations	percentage_of_cancellations
+Slot Not Available	1517	47.72
+Long Response Time	717	22.55
+Distance Too Far	503	15.82
+Professional Unavailable	156	4.91
+Customer Changed Mind	145	4.56
+Price Too High	141	4.44
+
+======================================================================
+QUERY 6
+======================================================================
+response_time_bucket	bookings	cancellations	cancellation_rate
+0-5 min	1059	81	7.65
+5-10 min	9639	838	8.69
+10-15 min	11802	1703	14.43
+15-20 min	2440	536	21.97
+20+ min	60	21	35.0
+
+======================================================================
+QUERY 7
+======================================================================
+demand_period	bookings	cancellations	cancellation_rate	avg_response_time
+Non-Peak	12744	1163	9.13	8.95
+Peak	12256	2016	16.45	12.52
+
+QUERY 8 ERROR:
+no such column: City
+
+======================================================================
+QUERY 9
+======================================================================
+Professional_ID	City	Primary_Service	Experience_Years	Available_Hours_Per_Week	bookings	completed_bookings	avg_customer_rating	avg_response_time
+P0052	Mumbai	Cleaning	6	40	302	250	4.49	10.75
+P0049	Mumbai	Cleaning	1	40	279	240	4.46	10.48
+P0074	Bengaluru	Cleaning	6	40	274	231	4.48	10.76
+P0076	Bengaluru	Cleaning	2	40	273	234	4.5	10.8
+P0050	Mumbai	Cleaning	10	48	272	229	4.5	10.5
+P0051	Mumbai	Cleaning	7	40	272	226	4.5	10.52
+P0075	Bengaluru	Cleaning	6	48	259	213	4.48	10.52
+P0073	Bengaluru	Cleaning	1	40	252	208	4.49	10.48
+P0098	Delhi	Cleaning	6	36	243	211	4.52	10.94
+P0099	Delhi	Cleaning	4	40	241	204	4.49	10.75
+P0027	Pune	Cleaning	2	36	228	192	4.49	10.49
+P0056	Mumbai	Salon	4	36	228	192	4.55	10.76
+P0026	Pune	Cleaning	9	40	225	188	4.53	10.89
+P0053	Mumbai	Salon	4	48	224	185	4.46	11.03
+P0100	Delhi	Cleaning	2	40	223	186	4.46	10.84
+P0078	Bengaluru	Salon	3	40	220	183	4.48	11.02
+P0097	Delhi	Cleaning	5	40	220	186	4.5	10.45
+P0054	Mumbai	Salon	1	40	216	178	4.51	10.36
+P0055	Mumbai	Salon	6	40	213	177	4.5	10.68
+P0080	Bengaluru	Salon	5	44	213	171	4.47	10.77
+P0079	Bengaluru	Salon	1	36	212	182	4.48	10.51
+P0090	Bengaluru	Electrician	10	36	212	176	4.49	10.95
+P0004	Nagpur	Cleaning	8	44	211	173	4.5	10.82
+P0057	Mumbai	AC Repair	3	44	211	160	4.51	10.61
+P0003	Nagpur	Cleaning	3	36	209	166	4.48	10.61
+P0072	Mumbai	Appliance Repair	8	44	209	177	4.5	10.94
+P0101	Delhi	Salon	3	44	207	176	4.51	10.82
+P0028	Pune	Cleaning	5	44	206	166	4.47	10.58
+P0060	Mumbai	AC Repair	9	40	205	171	4.49	10.53
+P0084	Bengaluru	AC Repair	3	40	204	163	4.49	10.4
+P0025	Pune	Cleaning	5	48	203	172	4.47	10.47
+P0058	Mumbai	AC Repair	9	40	202	162	4.51	10.79
+P0063	Mumbai	Plumbing	1	40	202	166	4.5	10.64
+P0002	Nagpur	Cleaning	5	40	201	167	4.5	10.39
+P0065	Mumbai	Electrician	3	44	199	173	4.53	10.66
+P0077	Bengaluru	Salon	1	40	198	161	4.5	10.62
+P0122	Hyderabad	Cleaning	1	40	198	158	4.46	10.93
+P0066	Mumbai	Electrician	1	40	197	168	4.52	10.87
+P0071	Mumbai	Appliance Repair	4	40	196	156	4.44	11.12
+P0001	Nagpur	Cleaning	7	44	195	162	4.49	10.23
+P0059	Mumbai	AC Repair	7	48	195	161	4.44	10.97
+P0067	Mumbai	Electrician	6	40	194	165	4.48	10.63
+P0102	Delhi	Salon	7	40	192	154	4.54	10.85
+P0113	Delhi	Electrician	5	40	190	163	4.48	10.65
+P0069	Mumbai	Appliance Repair	2	40	188	153	4.49	10.83
+P0045	Pune	Appliance Repair	1	36	185	158	4.5	10.82
+P0062	Mumbai	Plumbing	9	40	185	156	4.51	10.4
+P0086	Bengaluru	Plumbing	10	44	185	153	4.51	10.73
+P0089	Bengaluru	Electrician	7	40	184	164	4.48	10.73
+P0105	Delhi	AC Repair	10	40	184	155	4.52	10.33
+P0070	Mumbai	Appliance Repair	9	40	183	156	4.47	10.66
+P0036	Pune	AC Repair	2	40	182	144	4.43	11.22
+P0068	Mumbai	Electrician	9	40	181	143	4.44	11.15
+P0006	Nagpur	Salon	2	40	179	155	4.46	10.94
+P0123	Hyderabad	Cleaning	10	40	179	159	4.47	10.79
+P0081	Bengaluru	AC Repair	9	48	177	150	4.5	10.22
+P0083	Bengaluru	AC Repair	4	40	177	148	4.5	10.72
+P0092	Bengaluru	Electrician	3	40	177	153	4.47	10.68
+P0082	Bengaluru	AC Repair	3	48	176	145	4.48	11.0
+P0093	Bengaluru	Appliance Repair	2	36	176	146	4.57	10.37
+P0010	Nagpur	AC Repair	5	40	175	137	4.54	11.03
+P0091	Bengaluru	Electrician	4	44	174	139	4.49	11.14
+P0121	Hyderabad	Cleaning	8	48	174	142	4.48	10.37
+P0008	Nagpur	Salon	10	36	173	144	4.5	10.64
+P0094	Bengaluru	Appliance Repair	9	40	173	144	4.49	10.74
+P0120	Delhi	Appliance Repair	3	44	172	147	4.51	10.71
+P0032	Pune	Salon	3	36	171	140	4.56	10.75
+P0035	Pune	AC Repair	4	48	171	143	4.46	10.47
+P0106	Delhi	AC Repair	9	40	171	136	4.48	10.33
+P0103	Delhi	Salon	10	48	170	146	4.52	10.42
+P0029	Pune	Salon	8	40	169	139	4.42	10.8
+P0041	Pune	Electrician	9	44	168	138	4.51	10.61
+P0043	Pune	Electrician	10	40	168	146	4.5	10.47
+P0104	Delhi	Salon	5	36	168	136	4.51	10.76
+P0116	Delhi	Electrician	5	40	168	144	4.49	11.07
+P0127	Hyderabad	Salon	9	40	168	133	4.49	10.75
+P0046	Pune	Appliance Repair	7	40	167	138	4.47	10.69
+P0096	Bengaluru	Appliance Repair	5	40	167	137	4.43	10.83
+P0085	Bengaluru	Plumbing	9	40	166	141	4.48	10.53
+P0117	Delhi	Appliance Repair	8	48	165	146	4.51	11.04
+P0087	Bengaluru	Plumbing	1	44	164	135	4.47	10.78
+P0111	Delhi	Plumbing	5	36	164	140	4.51	10.63
+P0034	Pune	AC Repair	5	40	162	136	4.51	10.79
+P0088	Bengaluru	Plumbing	7	40	162	133	4.49	10.26
+P0124	Hyderabad	Cleaning	7	36	162	132	4.5	10.68
+P0033	Pune	AC Repair	7	40	161	128	4.51	10.58
+P0119	Delhi	Appliance Repair	1	40	161	136	4.49	10.66
+P0031	Pune	Salon	10	40	160	139	4.48	10.42
+P0061	Mumbai	Plumbing	10	40	160	128	4.48	10.88
+P0095	Bengaluru	Appliance Repair	6	40	160	140	4.48	10.71
+P0007	Nagpur	Salon	5	40	158	142	4.5	10.65
+P0011	Nagpur	AC Repair	5	40	158	124	4.51	10.45
+P0115	Delhi	Electrician	10	40	158	133	4.5	10.59
+P0021	Nagpur	Appliance Repair	9	40	157	132	4.53	10.82
+P0030	Pune	Salon	3	44	155	124	4.51	11.2
+P0125	Hyderabad	Salon	5	40	155	127	4.51	10.99
+P0114	Delhi	Electrician	2	40	154	126	4.49	10.44
+P0110	Delhi	Plumbing	6	36	153	120	4.43	10.42
+P0108	Delhi	AC Repair	5	40	152	122	4.47	10.88
+P0005	Nagpur	Salon	6	36	151	125	4.46	10.83
+P0107	Delhi	AC Repair	5	40	151	111	4.51	10.63
+P0039	Pune	Plumbing	10	36	149	123	4.51	10.82
+P0064	Mumbai	Plumbing	9	40	149	117	4.48	10.48
+P0009	Nagpur	AC Repair	3	40	148	122	4.53	11.0
+P0137	Hyderabad	Electrician	7	44	148	116	4.52	10.29
+P0012	Nagpur	AC Repair	10	36	147	116	4.5	11.19
+P0017	Nagpur	Electrician	4	40	147	120	4.51	10.9
+P0020	Nagpur	Electrician	5	40	147	112	4.47	10.6
+P0118	Delhi	Appliance Repair	2	40	146	127	4.5	10.69
+P0126	Hyderabad	Salon	4	40	146	126	4.48	10.48
+P0037	Pune	Plumbing	9	36	145	118	4.47	11.01
+P0048	Pune	Appliance Repair	7	40	145	126	4.54	10.36
+P0024	Nagpur	Appliance Repair	3	44	143	115	4.48	10.73
+P0044	Pune	Electrician	8	44	143	115	4.47	10.79
+P0042	Pune	Electrician	5	40	142	114	4.51	10.57
+P0128	Hyderabad	Salon	4	40	142	122	4.53	10.66
+P0015	Nagpur	Plumbing	1	40	140	115	4.55	10.34
+P0047	Pune	Appliance Repair	1	36	138	117	4.5	11.08
+P0040	Pune	Plumbing	1	40	137	111	4.5	10.81
+P0129	Hyderabad	AC Repair	7	40	137	116	4.52	10.53
+P0019	Nagpur	Electrician	9	48	136	124	4.49	10.06
+P0109	Delhi	Plumbing	7	36	136	110	4.42	10.69
+P0136	Hyderabad	Plumbing	5	44	135	117	4.52	10.62
+P0112	Delhi	Plumbing	4	40	134	114	4.57	10.57
+P0132	Hyderabad	AC Repair	6	40	134	112	4.49	11.39
+P0022	Nagpur	Appliance Repair	1	36	132	101	4.47	10.83
+P0018	Nagpur	Electrician	8	40	130	113	4.46	11.01
+P0023	Nagpur	Appliance Repair	9	44	129	106	4.46	10.64
+P0139	Hyderabad	Electrician	1	36	127	103	4.49	11.57
+P0013	Nagpur	Plumbing	4	40	125	100	4.51	10.8
+P0130	Hyderabad	AC Repair	1	40	125	99	4.47	10.41
+P0014	Nagpur	Plumbing	8	36	123	108	4.5	10.6
+P0141	Hyderabad	Appliance Repair	10	36	123	100	4.51	10.32
+P0038	Pune	Plumbing	4	44	120	109	4.48	10.5
+P0131	Hyderabad	AC Repair	7	44	120	92	4.5	10.56
+P0138	Hyderabad	Electrician	9	44	119	97	4.5	10.83
+P0140	Hyderabad	Electrician	10	40	119	102	4.52	10.57
+P0016	Nagpur	Plumbing	6	40	116	99	4.49	10.99
+P0144	Hyderabad	Appliance Repair	4	40	115	97	4.52	10.78
+P0133	Hyderabad	Plumbing	3	40	109	86	4.52	10.85
+P0143	Hyderabad	Appliance Repair	1	44	108	95	4.46	10.74
+P0134	Hyderabad	Plumbing	4	40	104	93	4.5	10.65
+P0142	Hyderabad	Appliance Repair	8	40	102	82	4.52	11.07
+P0135	Hyderabad	Plumbing	5	36	101	85	4.49	10.76
+
+======================================================================
+QUERY 10
+======================================================================
+Service_Category	completed_orders	total_revenue	average_order_value
+AC Repair	3253	3903354.0	1199.92
+Salon	3657	3291889.0	900.16
+Cleaning	4595	3226177.0	702.11
+Appliance Repair	3132	3130573.0	999.54
+Electrician	3247	1950705.0	600.77
+Plumbing	2877	1871946.0	650.66

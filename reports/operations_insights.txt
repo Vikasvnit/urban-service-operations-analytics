@@ -1,0 +1,13 @@
+URBAN SERVICE OPERATIONS - INSIGHTS
+==================================================
+
+Total bookings: 25,000
+Completion rate: 83.04%
+Cancellation rate: 12.72%
+Average response time: 10.70 minutes
+Average customer rating: 4.49
+Completed revenue: ₹17,374,644
+
+Highest cancellation service: AC Repair (14.83%)
+Highest cancellation city: Nagpur (13.35%)
+Highest cancellation time slot: 8-10 PM (16.82%)
